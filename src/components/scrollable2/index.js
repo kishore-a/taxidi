@@ -50,11 +50,10 @@ const places = [
 const Scrollable2 = () => {
   return (
     <FlatList
-horizontal
-    data={places}
+      horizontal
+      data={places}
       key={places.id}
       showsHorizontalScrollIndicator={false}
-    //   numColumns={2}
       renderItem={({ item }) => <Expolore item={item} />}
     />
   );
