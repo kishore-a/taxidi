@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList } from "react-native";
 import Post from "./image/index";
-import feed from '../../../assets/image/Airbnb Assets/Airbnb Assets/feed'
+import feed from '../../../assets/data/feed'
 
 const Posts = () => {
   return (
@@ -13,3 +13,4 @@ const Posts = () => {
   );
 };
 export default Posts;
+//This component renders the post that comes in the searchresult screen.Data is provided by the feed data.
