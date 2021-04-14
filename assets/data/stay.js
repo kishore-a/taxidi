@@ -1,4 +1,4 @@
-const stay = [
+export default [
   {
     id: 1,
     Image: "../../../assets/image/Entire_home.jpg",

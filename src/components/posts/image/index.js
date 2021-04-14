@@ -36,10 +36,10 @@ const Post = ({ item }) => {
         <Text style={{ color: "gray", fontSize: 14 }}>{(numberofpeoplerated)}</Text>
       </View>
       <View style={{ alignSelf: "flex-start", marginLeft: 20 }}>
-        <Text style={{ fontSize: 18, fontWeight: "900" }}>
+        <Text style={{ fontSize: 18, fontWeight: "900",marginBottom:6 }}>
           {house_type}{" - "}{location}
         </Text>
-        <Text style={{ fontSize: 18, fontWeight: "900" }}>
+        <Text style={{ fontSize: 18, fontWeight: "900" ,marginBottom:6}}>
 {description}
         </Text>
         <View style={{ flexDirection: "row" }}>
