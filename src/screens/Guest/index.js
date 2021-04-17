@@ -1,28 +1,15 @@
 import React from "react";
 import { View, Text } from "react-native";
-
+import Guest from "../../components/guest/index";
 const Guestpage = () => {
   return (
-    <View
-      style={{
-        marginTop: 50,
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <View>
-        <Text> Adults</Text>
-        <Text>Ages 13 or above</Text>
+    <View>
+      <View style={{marginTop:40}}>
+        <Guest Age="Adult" description="Age 13 aor above" />
       </View>
-      <View style={{ flexDirection: "row", marginRight: 20,}}>
-        <View style={{ borderWidth: 0.5, borderColor:'black',borderRadius:45,marginRight:20}}>
-          <Text style={{fontSize:30}}>-</Text>
-        </View>
-        <Text>0</Text>
-        <Text>+</Text>
-      </View>
+
     </View>
+
   );
 };
 export default Guestpage;
