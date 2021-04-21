@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19000,
+  "expoServerPort": 19005,
+  "packagerPort": 19005,
   "expoServerNgrokUrl": "https://k7-jbm.kishore-shankar20.taxidi.exp.direct",
   "packagerNgrokUrl": "https://packager.k7-jbm.kishore-shankar20.taxidi.exp.direct",
-  "ngrokPid": 67615,
+  "ngrokPid": 78839,
   "packagerPid": null,
   "webpackServerPort": null
 }
