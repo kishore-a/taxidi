@@ -11,11 +11,11 @@ const Guest = () => {
       {/* This is The adult option in the number of guest selection Screen */}
       <View
         style={{
-          marginTop: 40,
+          marginTop: 20,
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          borderBottomColor: "lightgrey",
+          borderBottomColor: "grey",
           borderBottomWidth: 0.5,
           marginLeft: 20,
           marginRight: 20,
@@ -24,7 +24,7 @@ const Guest = () => {
       >
         <View>
           <Text style={{ fontSize: 28, fontWeight: "bold" }}>Adult</Text>
-          <Text style={{ color: "lightgrey" }}>Age 13 or above</Text>
+          <Text style={{ color: "grey" }}>Age 13 or above</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Pressable onPress={() => setadult(Math.max(0, adult - 1))}>
@@ -67,7 +67,7 @@ const Guest = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          borderBottomColor: "lightgrey",
+          borderBottomColor: "grey",
           borderBottomWidth: 0.5,
           marginLeft: 20,
           marginRight: 20,
@@ -76,7 +76,7 @@ const Guest = () => {
       >
         <View>
           <Text style={{ fontSize: 28, fontWeight: "bold" }}>Children</Text>
-          <Text style={{ color: "lightgrey" }}>Ages 2-12</Text>
+          <Text style={{ color: "grey" }}>Ages 2-12</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Pressable onPress={() => setchildren(Math.max(0, children - 1))}>
@@ -119,7 +119,7 @@ const Guest = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          borderBottomColor: "lightgrey",
+          borderBottomColor: "grey",
           borderBottomWidth: 0.5,
           marginLeft: 20,
           marginRight: 20,
@@ -128,7 +128,7 @@ const Guest = () => {
       >
         <View>
           <Text style={{ fontSize: 28, fontWeight: "bold" }}>Infant</Text>
-          <Text style={{ color: "lightgrey" }}>Under 2</Text>
+          <Text style={{ color: "grey" }}>Under 2</Text>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Pressable onPress={() => setinfant(Math.max(0, infant -1))}>

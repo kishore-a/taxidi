@@ -9,16 +9,16 @@ import {
   ImageBackground,
   Pressable,
   Dimensions,
+  TextInput,
 } from "react-native";
 import styles from "./styles";
 import Aicons from "react-native-vector-icons/AntDesign";
+import { useNavigation } from "@react-navigation/native";
+import { useState } from "react";
+
 const HomeScreen = () => {
-  const [loaded] = useFonts({
-    Montserrat: require("../../../assets/fonts/Montserrat_Medium.ttf"), ///home/kishore/React/taxidi/assets/fonts/
-  });
-  if (!loaded) {
-    return null;
-  }
+  const navigation = useNavigation();
+  const [Location, setLocation] = useState("");
   const path = "../../../assets/image/wallpaper.jpg";
   return (
     <View>
@@ -27,6 +27,7 @@ const HomeScreen = () => {
           <View style={styles.container}>
             <View style={{ alignItems: "center" }}>
               <Pressable
+                onPress={() => navigation.navigate('destination')}
                 style={{
                   backgroundColor: "white",
                   width: Dimensions.get("screen").width - 20,
@@ -34,11 +35,18 @@ const HomeScreen = () => {
                   borderRadius: 40,
                   justifyContent: "center",
                   alignItems: "center",
-                }}>
-                <Text style={{ fontSize: 16, fontWeight: "bold", flexShrink: 1 }}>
-                  <Aicons name="search1" size={20} color={"#fc0356"} />
-                  {"  "}Where are you going?{" "}
-                </Text>
+                }}
+              >
+                <View style={{flexDirection: "row" ,alignItems:'center'}}>
+                  <Aicons name="search1" size={20} color={"#fc0356"}style={{marginRight:10}}/>
+
+                  <TextInput
+                    onChangeText={setLocation}
+                    value={Location}
+                    placeholder="Where are You Going?"
+                    style={{ fontSize: 16, fontWeight: "bold", flexShrink: 1 }}
+                  ></TextInput>
+                </View>
               </Pressable>
             </View>
             <View style={{ marginLeft: 20 }}>
@@ -48,12 +56,13 @@ const HomeScreen = () => {
                   fontWeight: "bold",
                   fontSize: 90,
                   width: "50%",
-                  fontFamily: "sans-serif",
+                  fontFamily:"Arial",
                 }}
               >
                 Go Near
               </Text>
               <Pressable
+                onPress={() => navigation.navigate("destination")}
                 style={{
                   marginLeft: 6,
                   backgroundColor: "white",
@@ -63,7 +72,7 @@ const HomeScreen = () => {
                   justifyContent: "center",
                   alignItems: "center",
                 }}
-                onClick={null}>
+              >
                 <Text style={{ fontSize: 16, fontWeight: "bold" }}>
                   {" "}
                   Explore nearby places
@@ -76,16 +85,17 @@ const HomeScreen = () => {
           <Text style={{ fontSize: 30, fontWeight: "bold", marginBottom: 20 }}>
             Live Anywhere
           </Text>
-          {/* <Live_anywhere/> */}
+
           <Live />
           <View>
             <Text
               style={{
                 fontSize: 30,
                 fontWeight: "bold",
-                marginTop: 20,
+                marginTop: 10,
                 marginBottom: 20,
-              }}>
+              }}
+            >
               Explore Nearby
             </Text>
             <Scrollable2 />

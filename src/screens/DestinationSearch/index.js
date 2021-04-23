@@ -1,15 +1,17 @@
 import React from "react";
-import { View, TextInput, FlatList, Text } from "react-native";
+import { View, TextInput, FlatList, Text,Pressable } from "react-native";
 import feed from "../../../assets/data/search_data";
 import Iicons from "react-native-vector-icons/Ionicons";
+import {useNavigation} from '@react-navigation/native'
 const DestinationSearch = () => {
   const [value, setinputtext] = React.useState("");
+  const navigation=useNavigation();
 
   return (
     <View
       style={{
-        marginVertical: "15%",
-        marginHorizontal: "8%"
+        
+        marginHorizontal: "5%"
       }}
     >
       <TextInput
@@ -28,7 +30,8 @@ const DestinationSearch = () => {
       <FlatList
         data={feed}
         renderItem={({ item }) => (
-          <View
+          <Pressable
+          onPress={()=>navigation.navigate('Guests')}
             style={{
               flexDirection: "row",
               alignItems: "center",
@@ -46,7 +49,7 @@ const DestinationSearch = () => {
               {"  "}
               {item.locality}
             </Text>
-          </View>
+          </Pressable>
         )}
       />
     </View>

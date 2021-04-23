@@ -23,7 +23,7 @@ const Router = (props) => {
         />
 
         <Stack.Screen
-          name={"Destination Search"}
+          name={"destination"}
           component={DestinationSearchScreen}
           options={{
             headerTitleStyle: { alignSelf: "center", textAlign: "center" },
@@ -37,10 +37,9 @@ const Router = (props) => {
           component={GuestScreen}
           options={{
             title: "How many people?",
-            headerStyle: { alignItems: "center" },
           }}
         />
-        <Stack.Screen name={"Search result"} component={Searchresults} />
+        <Stack.Screen name={"Searchresult"} component={Searchresults} />
       </Stack.Navigator>
     </NavigationContainer>
   );

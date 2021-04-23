@@ -12,12 +12,14 @@ import FeatherIcon from "react-native-vector-icons/Feather";
 import FAIcons from "react-native-vector-icons/FontAwesome5";
 import Iicons from "react-native-vector-icons/Ionicons";
 import SIcons from 'react-native-vector-icons/SimpleLineIcons'
+import EIcons from 'react-native-vector-icons/Entypo'
+import AIcons from 'react-native-vector-icons/AntDesign'
+import Wishlist from '../screens/Whishlist/index'
 const Tab = createBottomTabNavigator();
 const Hometabnavigator = () => {
   return (
     <Tab.Navigator
-      tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey" }}
-    >
+      tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey" }}>
       <Tab.Screen
         name={"Home"}
         component={HomeScreen}
@@ -28,11 +30,11 @@ const Hometabnavigator = () => {
         }}
       />
       <Tab.Screen
-        name={"Search"}
-        component={DestinationSearch}
+        name={"Saved"}
+        component={Wishlist}
         options={{
           tabBarIcon: ({ color }) => (
-            <FIcon name="search" size={25} color={color} />
+            <EIcons name="heart-outlined" size={25} color={color} />
           ),
         }}
       />
@@ -47,25 +49,21 @@ const Hometabnavigator = () => {
       />
 
       <Tab.Screen
-        name={"Guest"}
-        component={Guestpage}
+        name={"Message"}
+        component={HomeScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <SIcons name="people" size={25} color={color} />
-          ),
+<FeatherIcon name="message-square" size={25} color={color}/>
+            ),
         }}
       />
       <Tab.Screen
         name={"Search Result"}
-        component={Searchresults}
+        component={HomeScreen}
         options={{
-          title: "Destination",
+          title: "Profile",
           tabBarIcon: ({ color }) => (
-            <Iicons
-              name="md-location-outline"
-              size={25}
-              color={color}
-            />
+          <AIcons name="profile" size={25} color={color}/>
           ),
         }}
       />

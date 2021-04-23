@@ -6,12 +6,13 @@ import Searchresults from "./src/screens/Searchresults/index";
 import DestinationSearch from "./src/screens/DestinationSearch/index";
 import GuestPage from "./src/screens/Guest/index";
 import Router from "./src/navigation/Router";
+import Wishlist from "./src/screens/Whishlist/index";
 
 export default function App() {
   return (
     <View style={{ width: "100%", height: "100%" }}>
-
       <Router />
+      {/* <Wishlist /> */}
     </View>
   );
 }
