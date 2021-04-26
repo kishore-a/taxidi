@@ -15,6 +15,7 @@ import SIcons from 'react-native-vector-icons/SimpleLineIcons'
 import EIcons from 'react-native-vector-icons/Entypo'
 import AIcons from 'react-native-vector-icons/AntDesign'
 import Wishlist from '../screens/Whishlist/index'
+import Explorenavigator from '../navigation/Explorenavigator'
 const Tab = createBottomTabNavigator();
 const Hometabnavigator = () => {
   return (
@@ -22,7 +23,7 @@ const Hometabnavigator = () => {
       tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey" }}>
       <Tab.Screen
         name={"Home"}
-        component={HomeScreen}
+        component={Explorenavigator}
         options={{
           tabBarIcon: ({ color }) => (
             <FeatherIcon name="home" size={25} color={color} />

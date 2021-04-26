@@ -39,7 +39,6 @@ const Router = (props) => {
             title: "How many people?",
           }}
         />
-        <Stack.Screen name={"Searchresult"} component={Searchresults} />
       </Stack.Navigator>
     </NavigationContainer>
   );

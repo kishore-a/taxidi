@@ -56,7 +56,9 @@ const HomeScreen = () => {
                   fontWeight: "bold",
                   fontSize: 90,
                   width: "50%",
-                  fontFamily:"Arial",
+                  // fontFamily:'Montserrat-Light'
+
+                  
                 }}
               >
                 Go Near
@@ -71,6 +73,7 @@ const HomeScreen = () => {
                   borderRadius: 10,
                   justifyContent: "center",
                   alignItems: "center",
+                  // fontFamily:'Montserrat_Medium'
                 }}
               >
                 <Text style={{ fontSize: 16, fontWeight: "bold" }}>

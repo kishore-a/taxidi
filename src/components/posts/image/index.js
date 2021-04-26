@@ -13,7 +13,7 @@ const Post = ({ item }) => {
   const price=item.after_price;
   
   return (
-    <View style={{ alignItems: "center", marginTop: 50 }}>
+    <View style={{ alignItems: "center", marginTop: 30 }}>
       <Image
         source={image_path}
         style={{

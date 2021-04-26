@@ -1,59 +1,50 @@
 import React from "react";
-import { View, TextInput, FlatList, Text,Pressable } from "react-native";
+import { View, TextInput, FlatList, Text, Pressable } from "react-native";
 import feed from "../../../assets/data/search_data";
 import Iicons from "react-native-vector-icons/Ionicons";
-import {useNavigation} from '@react-navigation/native'
+import { useNavigation } from "@react-navigation/native";
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
+import Suggestionpage from './Suggestionpage'
+
 const DestinationSearch = () => {
   const [value, setinputtext] = React.useState("");
-  const navigation=useNavigation();
+  const navigation = useNavigation();
+
 
   return (
     <View
       style={{
-        
-        marginHorizontal: "5%"
+        marginHorizontal: "5%",
+
+
       }}
     >
-      <TextInput
-        value={value}
-        placeholder="Where are you going?"
-        onChangeText={setinputtext}
-      />
-      {/* <View
-        style={{
-          borderBottomColor: "lightgrey",
-          borderWidth: 0.3,
-          width: "100%",
-        }}
-      ></View> */}
-      {/* <View> */}
-      <FlatList
-        data={feed}
-        renderItem={({ item }) => (
-          <Pressable
-          onPress={()=>navigation.navigate('Guests')}
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              marginBottom: 30,
-              borderBottomColor: "lightgrey",
-              borderBottomWidth: 0.5,
-            }}
-          >
-            <View style={{backgroundColor:'lightgrey',marginRight:20,borderRadius:10}}>
-              <Iicons name="location-sharp" size={35} />
-            </View>
-            <Text style={{ fontSize: 15 }}>
-              {item.city}
-              {","}
-              {"  "}
-              {item.locality}
-            </Text>
-          </Pressable>
-        )}
-      />
+      <View style={{height:1000,marginTop:20}}>
+      <GooglePlacesAutocomplete
+      styles={{marginTop:30,textInput:{
+        fontSize:20
+      }}}
+    isRowScrollable={true}
+      placeholder='Where are you going?'
+      showPoweredLogo={false}
+      onPress={(data, details = null) => {
+   navigation.navigate('Guests')
+      }}
+      query={{
+        // key: 'AIzaSyB5Q8Hq1jDLlTzovNp7CAKV4kN9oSSXsQk',
+        key: 'AIzaSyDCY18aKft1CfPzYNUrMFWiYaJ8IKI9OK0',
+        language: 'en',
+        types:'(cities)'
+      }}
+    
+      
+      suppressDefaultStyles
+renderRow={(item)=><Suggestionpage item={item}/>}    />
+      </View>
+    
+      
     </View>
-    // </View>
+  
   );
 };
 export default DestinationSearch;

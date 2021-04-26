@@ -1,4 +1,4 @@
-export default[
+export default [
   {
     id: "1",
     Image:
@@ -10,6 +10,10 @@ export default[
     House_description: "Casa Vista - Apartment with full sea view",
     before_price: 50,
     after_price: 30,
+    coordinates: {
+      latitude: 13.0056966,
+      longitude: 80.2446796,
+    },
   },
   {
     id: "2",
@@ -22,11 +26,14 @@ export default[
     House_description: "Casa Vista - Apartment with full sea view",
     before_price: 50,
     after_price: 30,
+    coordinates: {
+      latitude: 13.0056966,
+      longitude: 80.2276796,
+    },
   },
   {
     id: "3",
-    Image:
-      "https://static.toiimg.com/photo/50993633.cms",
+    Image: "https://static.toiimg.com/photo/50993633.cms",
     rating: 3.5,
     number_of_people_rated: 542,
     house_type: "Entire House",
@@ -34,6 +41,10 @@ export default[
     House_description: "Casa Vista - Apartment with full sea view",
     before_price: 50,
     after_price: 30,
+    coordinates: {
+      latitude: 13.0056963,
+      longitude: 80.2476792,
+    },
   },
   {
     id: "4",
@@ -46,6 +57,10 @@ export default[
     House_description: "Casa Vista - Apartment with full sea view",
     before_price: 50,
     after_price: 30,
+    coordinates: {
+      latitude: 13.0056965,
+      longitude: 80.2476796,
+    },
   },
   {
     id: "5",
@@ -58,5 +73,9 @@ export default[
     House_description: "Casa Vista - Apartment with full sea view",
     before_price: 50,
     after_price: 30,
+    coordinates: {
+      latitude: 13.0056966,
+      longitude: 80.2476794,
+    },
   },
 ];
