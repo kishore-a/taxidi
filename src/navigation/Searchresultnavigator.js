@@ -7,7 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 const Searchresultnavigator = () => {
   const Tab = createMaterialTopTabNavigator();
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
       <Tab.Navigator
         tabBarOptions={{
           activeTintColor: "#f15454",
@@ -19,7 +19,7 @@ const Searchresultnavigator = () => {
         <Tab.Screen name={"List"} component={Searchresults} />
         <Tab.Screen name={"Map"} component={Mapspage} />
       </Tab.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
   );
 };
 

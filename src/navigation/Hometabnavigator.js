@@ -16,12 +16,15 @@ import EIcons from 'react-native-vector-icons/Entypo'
 import AIcons from 'react-native-vector-icons/AntDesign'
 import Wishlist from '../screens/Whishlist/index'
 import Explorenavigator from '../navigation/Explorenavigator'
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator(
+  
+);
 const Hometabnavigator = () => {
   return (
     <Tab.Navigator
-      tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey" }}>
-      <Tab.Screen
+  
+      tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey",tabStyle:{background:'black'}}}>
+      <Tab.Screen 
         name={"Home"}
         component={Explorenavigator}
         options={{
