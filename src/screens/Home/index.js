@@ -21,7 +21,7 @@ const HomeScreen = () => {
   const [Location, setLocation] = useState("");
   const path = "../../../assets/image/wallpaper.jpg";
   return (
-    <View style={{backgroundColor:'#1D2026'}}>
+    <View >
       <ScrollView>
         <ImageBackground source={require(path)} style={styles.image}>
           <View style={styles.container}>
@@ -85,7 +85,7 @@ const HomeScreen = () => {
           </View>
         </ImageBackground>
         <View style={{ margin: 30 }}>
-          <Text style={{ fontSize: 30, fontWeight: "bold", marginBottom: 20 ,color: "#D1D2D3"}}>
+          <Text style={{ fontSize: 30, fontWeight: "bold", marginBottom: 20 ,color: "black"}}>
             Live Anywhere
           </Text>
 

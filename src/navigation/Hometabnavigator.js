@@ -23,7 +23,7 @@ const Hometabnavigator = () => {
   return (
     <Tab.Navigator
   
-      tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey",tabStyle:{background:'black'}}}>
+      tabBarOptions={{ activeTintColor: "#f15454", inactiveTintColor: "grey"}}>
       <Tab.Screen 
         name={"Home"}
         component={Explorenavigator}

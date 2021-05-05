@@ -19,8 +19,7 @@ const Searchresultnavigator = () => {
         <Tab.Screen name={"List"} component={Searchresults} />
         <Tab.Screen name={"Map"} component={Mapspage} />
       </Tab.Navigator>
-    // </NavigationContainer>
-  );
+  )
 };
 
 export default Searchresultnavigator;

@@ -58,8 +58,8 @@ export default [
     before_price: 50,
     after_price: 30,
     coordinates: {
-      latitude: 13.0056965,
-      longitude: 80.2476796,
+      latitude: 13.009065,
+      longitude: 80.2406796,
     },
   },
   {
@@ -72,9 +72,9 @@ export default [
     Place: "Madurai",
     House_description: "Casa Vista - Apartment with full sea view",
     before_price: 50,
-    after_price: 30,
+    after_price: 20,
     coordinates: {
-      latitude: 13.0056966,
+      latitude: 13.0001976,
       longitude: 80.2476794,
     },
   },
