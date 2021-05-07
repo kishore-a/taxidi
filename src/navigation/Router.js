@@ -6,7 +6,7 @@ import Searchresults from "../screens/Searchresults/index";
 import DestinationSearchScreen from "../screens/DestinationSearch";
 import GuestScreen from "../screens/Guest/index";
 import Hometabnavigator from "../navigation/Hometabnavigator";
-import DetailedScreen from '../screens/DetailedScreen/index'
+import DetailedScreen from '../screens/DetailedScreen/Detailedpost/index'
 
 const Stack = createStackNavigator();
 

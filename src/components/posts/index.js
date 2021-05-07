@@ -5,14 +5,12 @@ import feed from '../../../assets/data/feed'
 
 const Posts = () => {
   return (
-    <Pressable
-    > 
+
        <FlatList
       data={feed}
       // key={feed.id}
       renderItem={({ item }) => <Post item={item} />}
     />
-    </Pressable>
    
   );
 };

@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-taxidi-dev-234225-authRole",
-      "UnauthRoleArn": "arn:aws:iam::230950538675:role/amplify-taxidi-dev-234225-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::230950538675:role/amplify-taxidi-dev-234225-authRole",
+      "AuthRoleName": "amplify-taxidi-dev-100131-authRole",
+      "UnauthRoleArn": "arn:aws:iam::230950538675:role/amplify-taxidi-dev-100131-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::230950538675:role/amplify-taxidi-dev-100131-authRole",
       "Region": "ap-south-1",
-      "DeploymentBucketName": "amplify-taxidi-dev-234225-deployment",
-      "UnauthRoleName": "amplify-taxidi-dev-234225-unauthRole",
-      "StackName": "amplify-taxidi-dev-234225",
-      "StackId": "arn:aws:cloudformation:ap-south-1:230950538675:stack/amplify-taxidi-dev-234225/9db73890-ae96-11eb-9d2f-024c7fd71e10",
-      "AmplifyAppId": "d12xjuq50b85p5"
+      "DeploymentBucketName": "amplify-taxidi-dev-100131-deployment",
+      "UnauthRoleName": "amplify-taxidi-dev-100131-unauthRole",
+      "StackName": "amplify-taxidi-dev-100131",
+      "StackId": "arn:aws:cloudformation:ap-south-1:230950538675:stack/amplify-taxidi-dev-100131/7893dad0-aeed-11eb-8988-0216dd8ea39c",
+      "AmplifyAppId": "dfsr9rcobwsl4"
     }
   }
 }

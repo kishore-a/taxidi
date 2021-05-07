@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, Dimensions } from "react-native";
 import Ficons from "react-native-vector-icons/FontAwesome";
 
-const Post = ({ item }) => {
+const Detailedpost = ({ item }) => {
   const image_path={uri:item.Image};
   const location=item.Place;
   const rating=item.rating;
@@ -62,4 +62,4 @@ const Post = ({ item }) => {
     </View>
   );
 };
-export default Post;
+export default Detailedpost;

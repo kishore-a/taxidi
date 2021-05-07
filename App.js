@@ -8,8 +8,11 @@ import GuestPage from "./src/screens/Guest/index";
 import Router from "./src/navigation/Router";
 import Wishlist from "./src/screens/Whishlist/index";
 import Searchresultnavigator from './src/navigation/Searchresultnavigator'
+import Amplify from 'aws-amplify'
+import config from './TAXIDI/aws-exports'
+Amplify.configure(config)
 
-export default function App() {
+const App=()=>{
   return (
     <View style={{ width: "100%", height: "100%" }}>
 {/* <Searchresultnavigator/> */}
@@ -18,3 +21,4 @@ export default function App() {
     </View>
   );
 }
+export default App;
