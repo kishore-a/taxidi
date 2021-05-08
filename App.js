@@ -10,6 +10,7 @@ import Wishlist from "./src/screens/Whishlist/index";
 import Searchresultnavigator from './src/navigation/Searchresultnavigator'
 import Amplify from 'aws-amplify'
 import config from './TAXIDI/aws-exports'
+import {withAuthenticator} from 'aws-amplify-react-native'
 Amplify.configure(config)
 
 const App=()=>{
@@ -21,4 +22,4 @@ const App=()=>{
     </View>
   );
 }
-export default App;
+export default withAuthenticator(App);

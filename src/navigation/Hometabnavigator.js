@@ -16,6 +16,8 @@ import EIcons from 'react-native-vector-icons/Entypo'
 import AIcons from 'react-native-vector-icons/AntDesign'
 import Wishlist from '../screens/Whishlist/index'
 import Explorenavigator from '../navigation/Explorenavigator'
+import Profilescreen from '../screens/ProfilePage/index'
+import Logout from "../screens/ProfilePage/Logout";
 const Tab = createBottomTabNavigator(
   
 );
@@ -62,8 +64,8 @@ const Hometabnavigator = () => {
         }}
       />
       <Tab.Screen
-        name={"Search Result"}
-        component={HomeScreen}
+        name={"Profile"}
+        component={Logout}
         options={{
           title: "Profile",
           tabBarIcon: ({ color }) => (

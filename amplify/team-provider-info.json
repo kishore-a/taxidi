@@ -10,6 +10,11 @@
       "StackName": "amplify-taxidi-dev-100131",
       "StackId": "arn:aws:cloudformation:ap-south-1:230950538675:stack/amplify-taxidi-dev-100131/7893dad0-aeed-11eb-8988-0216dd8ea39c",
       "AmplifyAppId": "dfsr9rcobwsl4"
+    },
+    "categories": {
+      "auth": {
+        "taxidi881eb0c9": {}
+      }
     }
   }
 }
