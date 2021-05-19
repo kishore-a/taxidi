@@ -1,0 +1,15 @@
+type Post @model {
+  id: ID!
+  Image: String!
+  rating:Float!
+  number_of_people_rated: Int!
+  house_type:String!
+  Place:String!
+  House_description:String
+  before_price:Int!
+  after_price:Int!
+  latitude:Float!
+  longitude:Float!
+  description: String
+}
+  
