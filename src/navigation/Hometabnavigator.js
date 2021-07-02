@@ -6,8 +6,10 @@ import HomeScreen from "../screens/Home/index";
 import FIcon from "react-native-vector-icons/Fontisto";
 import { color } from "react-native-reanimated";
 import DestinationSearch from "../screens/DestinationSearch";
+import Emergency from "../screens/Sos/index";
 import Guestpage from "../screens/Guest";
 import Searchresults from "../screens/Searchresults";
+import ProfilePage from '../screens/ProfilePage/index'
 import FeatherIcon from "react-native-vector-icons/Feather";
 import FAIcons from "react-native-vector-icons/FontAwesome5";
 import Iicons from "react-native-vector-icons/Ionicons";
@@ -46,7 +48,7 @@ const Hometabnavigator = () => {
       />
       <Tab.Screen
         name={"Taxidi"}
-        component={HomeScreen}
+        component={Emergency}
         options={{
           tabBarIcon: ({ color }) => (
             <FAIcons name="airbnb" size={25} color={color} />
@@ -65,7 +67,7 @@ const Hometabnavigator = () => {
       />
       <Tab.Screen
         name={"Profile"}
-        component={Logout}
+        component={ProfilePage}
         options={{
           title: "Profile",
           tabBarIcon: ({ color }) => (

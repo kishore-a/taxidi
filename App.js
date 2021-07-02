@@ -11,8 +11,12 @@ import Searchresultnavigator from './src/navigation/Searchresultnavigator'
 import Amplify from 'aws-amplify'
 import config from './TAXIDI/aws-exports'
 import {withAuthenticator} from 'aws-amplify-react-native'
-Amplify.configure(config)
-
+Amplify.configure({
+  ...config,
+  Analytics: { 
+    disabled: true
+  }
+});
 const App=()=>{
   return (
     <View style={{ width: "100%", height: "100%" }}>

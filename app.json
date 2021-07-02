@@ -20,10 +20,10 @@
       "supportsTablet": true
     },
     "android": {
-      "package":"com.company",
-      "config":{
-        "googleMaps":{
-          "apiKey":"AIzaSyDCY18aKft1CfPzYNUrMFWiYaJ8IKI9OK0"
+      "package": "com.company",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDCY18aKft1CfPzYNUrMFWiYaJ8IKI9OK0"
         }
       },
       "adaptiveIcon": {
