@@ -9,6 +9,14 @@ import {
   TouchableOpacity,
   TextInput,
 } from 'react-native';
+import Communications from 'react-native-communications';
+/* 2. Or import single methods
+ import {
+  phonecall,
+  email,
+  text,
+  web
+} from 'react-native-communications';*/
 
 // import SMS API
 import SendSMS from 'react-native-sms';
@@ -56,12 +64,17 @@ const bodySMS="NEED HELP EMERGENCY"
       <View style={styles.container}>
         
 
-
+      
 
         <TouchableOpacity
           activeOpacity={0.7}
           style={styles.buttonStyle}
-          onPress={sendsms}>
+          onPress={() =>
+                        Communications.text(
+                          '8754423475',
+                          'Help_Me_Im_in_emergency'
+                        )
+                      }>
           <Text style={styles.buttonTextStyle}>
 SOS
           </Text>

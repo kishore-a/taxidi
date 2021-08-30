@@ -110,6 +110,8 @@ const Guest = () => {
               <Text>+</Text>
             </View>
           </Pressable>
+          <Pressable >
+          </Pressable>
         </View>
       </View>
       {/* This is the infant option in the guest selection screen */}

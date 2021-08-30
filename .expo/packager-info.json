@@ -4,7 +4,7 @@
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://xe-9pk.kishore-shankar20.taxidi.exp.direct",
   "packagerNgrokUrl": "https://packager.xe-9pk.kishore-shankar20.taxidi.exp.direct",
-  "ngrokPid": 50737,
+  "ngrokPid": 12430,
   "packagerPid": null,
-  "webpackServerPort": null
+  "webpackServerPort": 19006
 }

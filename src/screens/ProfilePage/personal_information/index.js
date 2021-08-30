@@ -37,11 +37,11 @@ const PersonalInfo = () => {
           </View>
           <View style={{ marginLeft: 20 }}>
             <Text style={{ fontWeight: "bold", fontSize: 30 }}>{name}</Text>
-            <Text style={{ color: "red" }}>View Profile</Text>
+            {/* <Text style={{ color: "red" }}>View Profile</Text> */}
           </View>
         </View>
       </View>
-      <View style={{ alignItems: "center" ,marginTop:670}}>
+      <View style={{ alignItems: "center" ,justifyContent:'center'}}>
         <TouchableOpacity
           style={{
             width: width - 5,

@@ -38,7 +38,7 @@ const Hometabnavigator = () => {
         }}
       />
       <Tab.Screen
-        name={"Saved"}
+        name={"Expense"}
         component={Wishlist}
         options={{
           tabBarIcon: ({ color }) => (
